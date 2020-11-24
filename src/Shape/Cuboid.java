@@ -6,7 +6,7 @@ public class Cuboid extends SpaceShape {
     double height;
     double depth;
 
-    public Cuboid(Vertex3D pointA, double width, double height, double depth){
+    public Cuboid(Vertex3D pointA, double width, double height, double depth) {
         vertices.add(pointA);
         this.width = width;
         this.height = height;

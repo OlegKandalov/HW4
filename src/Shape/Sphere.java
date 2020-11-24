@@ -4,7 +4,7 @@ public class Sphere extends SpaceShape {
     Vertex3D pointA;
     double radius;
 
-    public Sphere(Vertex3D pointA, double radius){
+    public Sphere(Vertex3D pointA, double radius) {
         vertices.add(pointA);
         this.pointA = pointA;
         this.radius = radius;
@@ -12,12 +12,12 @@ public class Sphere extends SpaceShape {
 
     @Override
     public double getArea() {
-        return (4 * Math.PI) * Math.pow(radius,2);
+        return (4 * Math.PI) * Math.pow(radius, 2);
     }
 
     @Override
     public double getVolume() {
-        return (4 * Math.PI * (Math.pow(radius,3))) / 3;
+        return (4 * Math.PI * (Math.pow(radius, 3))) / 3;
     }
 
     @Override

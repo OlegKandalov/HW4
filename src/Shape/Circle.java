@@ -2,11 +2,11 @@ package Shape;
 
 import static java.lang.Math.*;
 
-public class Circle extends PlaneShape{
+public class Circle extends PlaneShape {
     Vertex pointA;
     double radius;
 
-    public Circle(Vertex pointA, double radius){
+    public Circle(Vertex pointA, double radius) {
         vertices.add(pointA);
         this.pointA = pointA;
         this.radius = radius;
@@ -19,7 +19,7 @@ public class Circle extends PlaneShape{
 
     @Override
     public double getArea() {
-        return PI * pow(radius,2);
+        return PI * pow(radius, 2);
     }
 
     @Override

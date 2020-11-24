@@ -13,25 +13,25 @@ public class Triangle extends PlaneShape {
     Vertex pointC;
 
 
-   public Triangle(Vertex pointA, Vertex pointB, Vertex pointC){
-       vertices.add(pointA);
-       vertices.add(pointB);
-       vertices.add(pointC);
+    public Triangle(Vertex pointA, Vertex pointB, Vertex pointC) {
+        vertices.add(pointA);
+        vertices.add(pointB);
+        vertices.add(pointC);
 
-       this.pointA = pointA;
-       this.pointB = pointB;
-       this.pointC = pointC;
+        this.pointA = pointA;
+        this.pointB = pointB;
+        this.pointC = pointC;
 
-       a = PlaneShape.getDistance(pointA, pointB);
-       b = PlaneShape.getDistance(pointB, pointC);
-       c = PlaneShape.getDistance(pointA, pointC);
-       pol = (a + b + c) / 2;
-   }
+        a = PlaneShape.getDistance(pointA, pointB);
+        b = PlaneShape.getDistance(pointB, pointC);
+        c = PlaneShape.getDistance(pointA, pointC);
+        pol = (a + b + c) / 2;
+    }
 
 
     @Override
     public double getPerimeter() {
-        return  a + b + c;
+        return a + b + c;
     }
 
     @Override

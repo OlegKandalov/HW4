@@ -8,7 +8,7 @@ public class SquarePyramid extends SpaceShape {
     double height;
     Vertex3D pointA;
 
-    public SquarePyramid(Vertex3D pointA, double width, double height){
+    public SquarePyramid(Vertex3D pointA, double width, double height) {
         vertices.add(pointA);
         this.width = width;
         this.height = height;
@@ -17,12 +17,12 @@ public class SquarePyramid extends SpaceShape {
 
     @Override
     public double getArea() {
-        return pow(width,2) + width * sqrt((4 * (pow(height,2))) + pow(width,2));
+        return pow(width, 2) + width * sqrt((4 * (pow(height, 2))) + pow(width, 2));
     }
 
     @Override
     public double getVolume() {
-        return (pow(width,2) * height) / 3;
+        return (pow(width, 2) * height) / 3;
     }
 
     @Override

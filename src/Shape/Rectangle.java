@@ -5,7 +5,7 @@ public class Rectangle extends PlaneShape {
     double height;
     Vertex pointA;
 
-    public Rectangle(Vertex pointA, double wight, double height){
+    public Rectangle(Vertex pointA, double wight, double height) {
         vertices.add(pointA);
         this.wight = wight;
         this.height = height;
